@@ -1,1 +1,6 @@
-print(*[i*i for i in list(map(int, input().split())) if i%2==0 and (i*i)%10!=4], sep=' ')
+string = input().split()
+
+for i, word in enumerate(string):
+    string[i] = word[1:] + word[0] + 'ки'
+
+print(*string)
