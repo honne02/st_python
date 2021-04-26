@@ -1,0 +1,1 @@
+print(*[i*i for i in list(map(int, input().split())) if i%2==0 and (i*i)%10!=4], sep=' ')
